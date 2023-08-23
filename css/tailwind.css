@@ -1,0 +1,564 @@
+.maintext {
+  font-size: 60px;
+  font-weight: 600;
+}
+.maininfo {
+  background-color: rgba(0, 0, 0, 0.306);
+}
+.buttons {
+  background-color: rgb(255, 255, 255);
+}
+.imgg {
+  opacity: 0;
+}
+.active {
+  opacity: 1;
+}
+.contentbox div {
+  display: none;
+}
+.contentbox div.active {
+  display: block;
+}
+.activee {
+  right: 2000px;
+  transition: ease-in-out;
+  transition-duration: 0.5s;
+}
+
+/* CARD 1 */
+
+.containerBox {
+  position: relative;
+}
+.containerBox .card {
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background-color: #232323;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.containerBox .card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #9bdc28;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+.containerBox .card:hover:before {
+  clip-path: circle(300px at 80% -20%);
+}
+.containerBox .card:after {
+  content: "Nike";
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  font-size: 12em;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.04);
+}
+.containerBox .card .imgBox {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10000;
+  width: 100%;
+  height: 220px;
+  transition: 0.5s;
+}
+.containerBox .card:hover .imgBox {
+  top: 0%;
+  transform: translateY(0%);
+}
+.containerBox .card .imgBox img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-25deg);
+  width: 270px;
+}
+
+.containerBox .card .contentBox {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 10;
+}
+.containerBox .card:hover .contentBox {
+  height: 210px;
+}
+.containerBox .card .contentBox h2 {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+}
+.containerBox .card .contentBox .size,
+.containerBox .card .contentBox .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+.containerBox .card:hover .contentBox .size {
+  opacity: 1;
+  visibility: visible;
+  /* transition-delay: 0.5s; */
+}
+.containerBox .card:hover .contentBox .color {
+  opacity: 1;
+  visibility: visible;
+  /* transition-delay: 0.6s; */
+}
+
+.containerBox .card .contentBox .size h3,
+.containerBox .card .contentBox .color h3 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+.containerBox .card .contentBox .size span {
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  display: inline-block;
+  color: #111;
+  background-color: #fff;
+  margin: 0 5px;
+  transition: 0.5s;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.containerBox .card .contentBox .size span:hover {
+  background-color: #9bdc28;
+}
+.containerBox .card .contentBox .color span {
+  width: 20px;
+  height: 20px;
+  background-color: #ff0;
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.containerBox .card .contentBox .color span:nth-child(2) {
+  background-color: #9bdc28;
+}
+.containerBox .card .contentBox .color span:nth-child(3) {
+  background-color: #03a9f4;
+}
+.containerBox .card .contentBox .color span:nth-child(4) {
+  background-color: #e91e63;
+}
+.containerBox .card .contentBox a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #111;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.5s;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.containerBox .card:hover .contentBox a {
+  opacity: 1;
+  transform: translateY(0px);
+  /* transition-delay: 0.75s; */
+}
+
+/* CARD 2  */
+
+.containerBox2 {
+  position: relative;
+}
+.containerBox2 .card2 {
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background-color: #232323;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.containerBox2 .card2:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f3efef;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+.containerBox2 .card2:hover:before {
+  clip-path: circle(300px at 80% -20%);
+}
+.containerBox2 .card2:after {
+  content: "Boat";
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  font-size: 12em;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.04);
+}
+.containerBox2 .card2 .imgBox2 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-55%);
+  z-index: 10000;
+  width: 100%;
+  height: 220px;
+  transition: 0.5s;
+}
+.containerBox2 .card2:hover .imgBox2 {
+  top: 0%;
+  transform: translateY(15%);
+}
+.containerBox2 .card2 .imgBox2 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 270px;
+}
+
+.containerBox2 .card2 .contentBox2 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 10;
+}
+.containerBox2 .card2:hover .contentBox2 {
+  height: 150px;
+}
+.containerBox2 .card2 .contentBox2 h2 {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+}
+.containerBox2 .card2 .contentBox2 .size,
+.containerBox2 .card2 .contentBox2 .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+.containerBox2 .card2:hover .contentBox2 .size {
+  opacity: 1;
+  visibility: visible;
+  /* transition-delay: 0.5s; */
+}
+.containerBox2 .card2:hover .contentBox2 .color {
+  opacity: 1;
+  visibility: visible;
+  /* transition-delay: 0.6s; */
+}
+
+.containerBox2 .card2 .contentBox2 .size h3,
+.containerBox2 .card2 .contentBox2 .color h3 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+.containerBox2 .card2 .contentBox2 .size span {
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  display: inline-block;
+  color: #111;
+  background-color: #fff;
+  margin: 0 5px;
+  transition: 0.5s;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.containerBox2 .card2 .contentBox2 .size span:hover {
+  background-color: #9bdc28;
+}
+.containerBox2 .card2 .contentBox2 .color span {
+  width: 20px;
+  height: 20px;
+  background-color: #ff0;
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.containerBox2 .card2 .contentBox2 .color span:nth-child(2) {
+  background-color: #ff0000;
+}
+.containerBox2 .card2 .contentBox2 .color span:nth-child(3) {
+  background-color: #ffffff;
+}
+.containerBox2 .card2 .contentBox2 .color span:nth-child(4) {
+  background-color: #00c8ff;
+}
+.containerBox2 .card2 .contentBox2 a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #111;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.5s;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.containerBox2 .card2:hover .contentBox2 a {
+  opacity: 1;
+  transform: translateY(0px);
+  /* transition-delay: 0.75s; */
+}
+
+/* CARD 3 */
+
+.containerBox3 {
+  position: relative;
+}
+.containerBox3 .card3 {
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background-color: #232323;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.containerBox3 .card3:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #7993bd;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+.containerBox3 .card3:hover:before {
+  clip-path: circle(300px at 80% -20%);
+}
+.containerBox3 .card3:after {
+  content: "Apple";
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  font-size: 12em;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.04);
+}
+.containerBox3 .card3 .imgBox3 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-55%);
+  z-index: 10000;
+  width: 100%;
+  height: 220px;
+  transition: 0.5s;
+}
+.containerBox3 .card3:hover .imgBox3 {
+  top: 0%;
+  transform: translateY(20%);
+}
+.containerBox3 .card3 .imgBox3 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 270px;
+}
+
+.containerBox3 .card3 .contentBox3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 10;
+}
+.containerBox3 .card3:hover .contentBox3 {
+  height: 130px;
+}
+.containerBox3 .card3 .contentBox3 h2 {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+}
+.containerBox3 .card3 .contentBox3 .size,
+.containerBox3 .card3 .contentBox3 .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+.containerBox3 .card3:hover .contentBox3 .size {
+  opacity: 1;
+  visibility: visible;
+  /* transition-delay: 0.5s; */
+}
+.containerBox3 .card3:hover .contentBox3 .color {
+  opacity: 1;
+  visibility: visible;
+  /* transition-delay: 0.6s; */
+}
+
+.containerBox3 .card3 .contentBox3 .size h3,
+.containerBox3 .card3 .contentBox3 .color h3 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+.containerBox3 .card3 .contentBox3 .size span {
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  display: inline-block;
+  color: #111;
+  background-color: #fff;
+  margin: 0 5px;
+  transition: 0.5s;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.containerBox3 .card3 .contentBox3 .size span:hover {
+  background-color: #9bdc28;
+}
+.containerBox3 .card3 .contentBox3 .color span {
+  width: 20px;
+  height: 20px;
+  background-color: #ff0;
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.containerBox3 .card3 .contentBox3 .color span:nth-child(2) {
+  background-color: #ffffff;
+}
+.containerBox3 .card3 .contentBox3 .color span:nth-child(3) {
+  background-color: #f3a2ff;
+}
+.containerBox3 .card3 .contentBox3 .color span:nth-child(4) {
+  background-color: #eb0c0c;
+}
+.containerBox3 .card3 .contentBox3 a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #111;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.5s;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.containerBox3 .card3:hover .contentBox3 a {
+  opacity: 1;
+  transform: translateY(0px);
+  /* transition-delay: 0.75s; */
+}
+
+/* ABOUT */
+.parallax {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parallax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+.parallax:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #ffffff, transparent);
+  z-index: 10000;
+}
+.parallax:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  z-index: 10000;
+  mix-blend-mode: color;
+}
+#textt {
+  position: relative;
+  font-size: 19em;
+  z-index: 1;
+  font-style: italic;
+}
+#road {
+  z-index: 2;
+}
+.banner {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    url(D:\code\ipsit\images\loginbg.jpg);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
